@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<div id="interface">
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<script language="javascript" src="_javascript/funcoes.js"></script>
+		<title>GOOGLE GLASS </title>
+	<style>
+		body {
+        background-color: #ffffff;
+        color: rgba("0,0,0,1");
+        font: Arial, sans-serif;
+    }
+        p {
+        text-indent: 25px;
+            font-family: Arial, sans-serif;
+            width : 550px;
+            text-align: justify;
+          }
+    a {
+        color: #606060 ;
+        text-decoration: none;
+        transition: background-color 1s;
+    }
+     article a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    aside a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    footer a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    body h1 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    body h2 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    body h3 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    header#cabecalho img#icone {
+        position : absolute;
+        left: 780px;
+        top: 40px;
+    }
+    header#cabecalho {
+        border-bottom: 1px #606060 solid;
+        height: 150px;
+        background : url('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass-logo.jpg')no-repeat 80px 100px;
+    }
+
+    header#cabecalho h2 {
+        font-family: Arial, sans-serif;
+        font-size: 15pt;
+        color: #888888;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    table#tabela {
+        border: 1px solid #606060;
+        border-spacing: 0px;
+        margin-left : auto;
+        margin-right: center;
+    }
+    table#tabela td {
+        font-family: Arial, sans-serif;
+        border: 1px solid #606060;
+        padding :10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table#tabela td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    }
+    table#tabela td.cd {
+     background-color: #cecece
+    }
+    table#tabela caption {
+        color: #888888;
+        font-size: 13pt;
+        font-weight: bolder;
+    }
+    table#tabela caption span {
+        display:block;
+        float:right;
+        color: #000000;
+        font-size: 8pt;
+        margin-top: 10px;
+    }
+    article#np h2 {
+        font-size: 13pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 0px;
+        margin : 10px 0px 10px 0px;
+    }
+
+    header#np h1 {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    color : #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+    header#np h2 {
+    font-size: 13pt;
+    background-color: #f5f5f5;
+    margin: 0px;
+    color: #cecece;
+    }
+    header#np h3 {
+    font-size: 12px;
+    color: #606060;
+    }
+    .direita {
+    text-align: right;
+    }
+    /*formataçao Foto Legenda*/
+    figure.foto-legenda {
+        position:relative;
+        border: 1px solid #b4b4b4;
+    }
+    figure.foto-legenda img {
+        width: 150px;
+        height: 200px;
+        box-shadow: 1px 1px 3px ('0,0,0,.4');
+    }
+    figure.foto-legenda figcaption {
+        position:absolute;
+        opacity:0;
+        top:0px;
+        background-color:('0,0,0,.4');
+        color:white;
+        width:100%;
+        height:100%;
+        padding:10px;
+        box-sizing:border-box;
+        transition:opacity 1s;
+    }
+    figure.foto-legenda hover figcaption {
+        opacity:1;
+    }
+    /*formataçao do menu*/
+
+    nav#menu {
+        display: block;
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        left:400px
+    }
+    nav#menu li{
+        display: inline-block;
+        background-color: #dddddd;
+        padding: 10px;
+        transition: background-color 1s;
+        box-shadow: 0px 0px 10px black;
+        font-family: Arial, sans-serif;
+    }
+    nav#menu li:hover {
+        background-color: #b3b3b3;
+    }
+    nav#menu h1 {
+        display: none;
+
+    }
+
+    section#corpo {
+        display: block;
+        width : 550px;
+        float: left;
+        border-right:1px solid #606060;
+        padding-right: 15px;
+    }
+    aside#lateral {
+        display: block;
+        width: 650px;
+        float: right;
+        padding :10px ;
+        background-color: #dddddd;
+        margin-top : 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    aside#lateral h1 {
+        font-family: Arial, sans-serif;
+        font-size: 20pt;
+        color: #606060;
+        padding: 5px ;
+        margin-top: 0px;
+    }
+    aside#lateral h2 {
+        font-family: Arial, sans-serif;
+        font-size: 15pt;
+        color: #ffffff;
+        padding: 5px;
+        background-color : #606060;
+        padding: 5px ;
+    }
+
+    footer#rodape {
+     clear: both;
+     border-top: 1px solid #606060;
+    }
+    footer#rodape p {
+        text-align: center;
+
+	</style>
+	<style>
+	body h1 {
+		font-family: Arial, sans-serif;
+		color: #4f4f4f;
+}
+	body h2 {
+		font-family: Arial, sans-serif;
+		color: #4f4f4f;
+}
+	body h3 {
+		font-family: Arial, sans-serif;
+		color: #4f4f4f;
+}
+	</style>
+</head>
+<body background="#dddddd;">
+<hgroup>
+<article>
+	<header id="cabecalho">	
+	<h1> GOOGLE GLASS</h1>
+	<h2>A Revolução Do GOOGLE Está chegando</h2>
+<figure>
+	<img id="icone" src = "'C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass.png"/>
+</figure>
+<br/>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul>
+				<li onmouseover="mudaFoto('_media/_imagens/home.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('_media/_imagens/espeficacoes.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="specs.html">Especificações</a></li>
+				<li onmouseover="mudaFoto('_media/_imagens/Fotos.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="fotos.html">Fotos</a></li>
+				<li onmouseover="mudaFoto('_media/_imagens/multimidia.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="multimidia.html">Multimídia</a></li>
+				<li onmouseover="mudaFoto('_media/_imagens/Contato.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="Comunique.html">Fale conosco</a></li>
+				<li><a href="ajuda.html">Ajuda/Help</a></li>
+			</ul>
+		</nav>
+</header>
+</hgroup>
+<h2>I'm not Understading what is writen </h2>
+	<p>First click on the 3 points up your computer. After click in "traduzir". Then click in the 3 points.then click "Escolher outro idioma" then choose your language.</p>
+<h2>Antes de clicar em Enviar saiba:</h2>
+<p>Você sera levado ao seu Aplicativo de Email. Depois Você ira ver uma mensagem com todos os dados escritos que Você escreveu.(Antes certifique que Você Completou o formúlario) Agora envie ele para heitorberg114@gmail.com .Agora que temos o seus dados podemos Ver sua mensagem.Você ira ajudar muito se apagar o código e escrever: NOME, CIDADE ,ESTADO E MENSAGEM.Pois ficara arrumado para entendermos.SE: caso o usuario clique no ENVIAR e não apareça os dados por favor escreva:NOME, CIDADE ,ESTADO E MENSAGEM.</p>
+<h2>Porquê tem um Código na Parte da Mensagem? </h2>
+<p> Deve ser Erro. Só apague o código e Escreva a sua mensagem.</p>
+<h1>As imagens não aparecem</h1>
+<p>Talvez a imagem não esteja carregando.Não ligue aproveite outras abas do site.</p>
+<H2>Onde comprar Google glass?</h2>
+<p>Como ele é exclusivo, é díficil achar, nem mesmo na google store tem! Bom tem alguns na <a href="https://br.ebay.com/b/Google-Smart-Glasses/178894/bn_1518132" target="blank">Ebay </a> e na <a href="https://www.amazon.com.br/Google-Glass%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-English-BestApp%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%BC%96%E8%91%97-ebook/dp/B09KC2W8HJ/ref=sr_1_5?adgrpid=1150089869753036&dib=eyJ2IjoiMSJ9.SNfPGr75t8Swm1cdPvRdptI6vtoBvuHO3JUy1sUYiBYFbhnyE9PSqxo39gbkYg68VTYuXW1XjA3KdVO8VZHLOXVu-RyUGd2ZjO13KEV2AqANvtgX3TKGdYXp1jPqkMwTWPuDpTflmzf6acZfQU0t2EJZIGxTE0IytEXHcukjp2JCfSgJ7w6Lfy69S33_3B7UrkcK-dQ1MxMiz1GRR_LeQshf-ZzIfgwe3xqdpK8jQqNFsrRbhugE6vvG5mVQaShYpZzel4RTc70V8TwnwLS6lrxXd1QXsHP86YBVRA30qxY.CDnVTlcul5FV-590dDKElJLU4E8dura4CaGsBIJdYxY&dib_tag=se&hvadid=71880780435456&hvbmt=bp&hvdev=c&hvlocphy=677&hvnetw=o&hvqmt=p&hvtargid=kwd-71881150868881%3Aloc-20&hydadcr=5622_13210448&keywords=google+glass&qid=1729686620&sr=8-5" target="blank">Amazon </a>.Eu acho melhor Você comprar no ebay pois o da Amazon tem poucos glasses. </p>
+<h2>Como fazer um site bom? </h2>
+<P>Não tem muito segredo, O primeiro passo(se não souber nada ou pouco de progamação)é fazer um bom curso como <a href="https://www.cursoemvideo.com/cursos/" target="blank">Curso em vídeo.</a>Curso em vídeo não tem cursos só de progamação, mas para um monte de coisas.O segundo passo(preferencial) é ter um bom instrutor te ajudando que já saiba progamar.O terceiro é ter boas ideias para um site.</p>
+<h2>Os vídeos estão em inglês,Eu não consigo entender.</h2>
+<p>Clique nas legendas(ative ela, se já estiver ativada não clique.). Depois nas configurações e na legenda de novo(As legendas dentro das configurações). E clique em traduzir automaticamente.E depois clique na sua língua e em Traduzir.(Treine com o vídeo abaixo ou ao lado)</p><br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cAediAS9ADM?si=y7m_IniPnDGzwb9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2>Algo está errado/bugado/não aparece.</h2>
+<p>Recarregue a página algumas vezes sempre cheque o erro depois de cada vez.Se ficar com o mesmo erro o Escreva abaixo Para tentarmos ajeitar.</p>
+<h2>Outra Pergunta ou Aviso?</h2>
+<form action="mailto:heitorberg114@gmail">
+<p><Label for="cEmail"> E-mail</label>: <input type="email" name="tEmail" id="cEmail" size"30" maxlenght="30"/></p>
+<p><label>Mande a sua pergunta ou aviso:</label><input type="text"><br/><input type="submit" type="Enviar" Size ="30"/></P>
+</form>
+<h2>Gostaria de Saber mais do Glass</h2>
+<p>Acesse esse site com vários vídeos do glass:<a href="https://www.youtube.com/results?search_query=google+glass" target="blank"> https://www.youtube.com/results?search_query=google+glass</a></p>
+</article>
+<h2>Porquê em Fale conosco pede Email/Senha/Endereço?</h2>
+<p>A senha e Endereço não é obrigatória, pois serve para nada. Mas o Email é sim obrigatório pra recebermos a mensagem.Caso não queira mandar a mensagem não preencha o formulário.Mas gostariamos de saber pelo menos a cidade e estado pois poderemos saber onde vocês moram.</p>
+<footer id="rodape">
+<p>Copyright &copy; 2013 - by Gustavo Guanabara and Heitor Berg<br/>
+<a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</A> |<a href="http://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>

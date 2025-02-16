@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>GOOGLE GLASS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <h1>GOOGLE GLASS</h1>
+            <h2>A Revolução Do GOOGLE Está chegando</h2>
+            <figure>
+                <img id="icone" src="_media/_imagens/glass.png" alt="Google Glass">
+            </figure>
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_media/_imagens/home.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_media/_imagens/espeficacoes.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_media/_imagens/Fotos.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_media/_imagens/multimidia.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_media/_imagens/Contato.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="Comunique.html">Fale conosco</a></li>
+                    <li><a href="ajuda.html">Ajuda/Help</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo">
+            <article id="np">
+                <header>
+                    <h3>Tecnologia > Inovações</h3>
+                    <h1>Saiba tudo sobre o Google Glass</h1>
+                    <h2>Por Gustavo Guanabara e Heitor Berg</h2>
+                    <h3 class="direita">Feito em 2024 e Notícias de 2013</h3>
+                    <h3>Compre um glass na parte de Ajuda</h3>
+                    <h3>obs:Leia a parte AJUDA</h3>
+                </header>
+                <h2>O que é</h2>
+                <p>...</p>
+                </article>
+        </section>
+        <script>
+            function mudaFoto(foto) {
+                document.getElementById("icone").src = foto;
+            }
+        </script>
+    </div>
+</body>
+</html>

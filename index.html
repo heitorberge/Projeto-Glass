@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<div id="interface">
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+		<title>GOOGLE GLASS </title>
+	<style>
+		body {
+        background-color: #ffffff;
+        color: rgba("0,0,0,1");
+        font: Arial, sans-serif;
+    }
+        p {
+        text-indent: 25px;
+            font-family: Arial, sans-serif;
+            width : 550px;
+            text-align: justify;
+          }
+    a {
+        color: #606060 ;
+        text-decoration: none;
+        transition: background-color 1s;
+    }
+     article a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    aside a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    footer a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    body h1 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    body h2 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    body h3 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    header#cabecalho img#icone {
+        position : absolute;
+        left: 780px;
+        top: 40px;
+    }
+    header#cabecalho {
+        border-bottom: 1px #606060 solid;
+        height: 150px;
+        background : url('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass-logo.jpg')no-repeat 80px 100px;
+    }
+
+    header#cabecalho h2 {
+        font-family: Arial, sans-serif;
+        font-size: 15pt;
+        color: #888888;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    table#tabela {
+        border: 1px solid #606060;
+        border-spacing: 0px;
+        margin-left : auto;
+        margin-right: center;
+    }
+    table#tabela td {
+        font-family: Arial, sans-serif;
+        border: 1px solid #606060;
+        padding :10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table#tabela td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    }
+    table#tabela td.cd {
+     background-color: #cecece
+    }
+    table#tabela caption {
+        color: #888888;
+        font-size: 13pt;
+        font-weight: bolder;
+    }
+    table#tabela caption span {
+        display:block;
+        float:right;
+        color: #000000;
+        font-size: 8pt;
+        margin-top: 10px;
+    }
+    article#np h2 {
+        font-size: 13pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 0px;
+        margin : 10px 0px 10px 0px;
+    }
+
+    header#np h1 {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    color : #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+    header#np h2 {
+    font-size: 13pt;
+    background-color: #f5f5f5;
+    margin: 0px;
+    color: #cecece;
+    }
+    header#np h3 {
+    font-size: 12px;
+    color: #606060;
+    }
+    .direita {
+    text-align: right;
+    }
+    /*formataçao Foto Legenda*/
+    figure.foto-legenda {
+        position:relative;
+        border: 1px solid #b4b4b4;
+    }
+    figure.foto-legenda img {
+        width: 150px;
+        height: 200px;
+        box-shadow: 1px 1px 3px ('0,0,0,.4');
+    }
+    figure.foto-legenda figcaption {
+        position:absolute;
+        opacity:0;
+        top:0px;
+        background-color:('0,0,0,.4');
+        color:white;
+        width:100%;
+        height:100%;
+        padding:10px;
+        box-sizing:border-box;
+        transition:opacity 1s;
+    }
+    figure.foto-legenda hover figcaption {
+        opacity:1;
+    }
+    /*formataçao do menu*/
+
+    nav#menu {
+        display: block;
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        left:400px
+    }
+    nav#menu li{
+        display: inline-block;
+        background-color: #dddddd;
+        padding: 10px;
+        transition: background-color 1s;
+        box-shadow: 0px 0px 10px black;
+        font-family: Arial, sans-serif;
+    }
+    nav#menu li:hover {
+        background-color: #b3b3b3;
+    }
+    nav#menu h1 {
+        display: none;
+
+    }
+
+    section#corpo {
+        display: block;
+        width : 550px;
+        float: left;
+        border-right:1px solid #606060;
+        padding-right: 15px;
+    }
+    aside#lateral {
+        display: block;
+        width: 650px;
+        float: right;
+        padding :10px ;
+        background-color: #dddddd;
+        margin-top : 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    aside#lateral h1 {
+        font-family: Arial, sans-serif;
+        font-size: 20pt;
+        color: #606060;
+        padding: 5px ;
+        margin-top: 0px;
+    }
+    aside#lateral h2 {
+        font-family: Arial, sans-serif;
+        font-size: 15pt;
+        color: #ffffff;
+        padding: 5px;
+        background-color : #606060;
+        padding: 5px ;
+    }
+
+    footer#rodape {
+     clear: both;
+     border-top: 1px solid #606060;
+    }
+    footer#rodape p {
+        text-align: center;
+
+	</style>
+</div>
+</head>
+<body>
+<hgroup>
+    <script>
+        function mudaFoto(Foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+	<header id="cabecalho">	
+	<h1> GOOGLE GLASS</h1>
+	<h2>A Revolução Do GOOGLE Está chegando</h2>
+<figure>
+	<img id="icone" src = "C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass.png"/>
+</figure>
+<br/>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul>
+				<li onmouseover="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/home.png')" onmouseout="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/_imagens/glass.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/espeficacoes.png')" onmouseout="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass.png')"><a href="specs.html">Especificações</a></li>
+				<li onmouseover="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/Fotos.png')" onmouseout="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass.png')"><a href="fotos.html">Fotos</a></li>
+				<li onmouseover="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/multimidia.png')" onmouseout="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass.png')"><a href="multimidia.html">Multimídia</a></li>
+				<li onmouseover="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/Contato.png')" onmouseout="mudaFoto('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass.png')"><a href="Comunique.html">Fale conosco</a></li>
+				<li><a href="ajuda.html">Ajuda/Help</a></li>
+			</ul>
+		</nav>
+</header>
+</hgroup>
+
+<section id="corpo">
+<article id="np">
+<hgroup>
+<header id="np">
+<h3>Tecnologia > &nbsp; Inovações</h3>
+
+<h1>Saiba tudo sobre o Google Glass</h1>
+<h2>Por Gustavo Guanabara e Heitor Berg</h2>
+<h3 class="direita">Feito em 2024 e Notícias de 2013</h3>
+<h3>Compre um glass na parte de Ajuda</h3>
+<h3>obs:Leia a parte AJUDA</h3>
+
+</header>
+</hgroup>
+<h2>O que é</h2><br/>
+<p>O <Strong><i>Google Glass</i></Strong> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <strong><a href="https://pt.wikipedia.org/wiki/Project_Glass" target="_blank">Project Glass</a></strong>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <strong><em>Google Glass</em></strong> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/elXk87IKgCo?si=ETsacA9_BJOpoSlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>Uma nova maneira de ver o mundo</figcaption>
+<h2>Data de lançamento</h2><br/>
+<p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+<h2>Especificações Técnicas<br/></h2>
+<table id="tabela">
+<caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
+
+<tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25°</td></tr>
+<tr><td rowspan="2" class="ce">Camera</td><td class="cd"> 5MP para fotos   </td></tr>
+<tr><td class="cd">720p para vídeos </td></tr>
+<tr><td rowspan="2" class="ce">Conectividade</td><td class="cd"> Wi-Fi</td></tr>
+<tr><td class="cd"> Bluetooth</td><td>
+<tr><td class="ce">Memória Interna</td><td class="cd">12GB</td></tr>
+</table>
+
+<p>De acordo com fontes próximas do <strong>Google</strong>, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+
+<p>O vídeo de divulgação do <strong>Google</strong> mostra que você pode se transformar em uma espécie de <i>“super-humano”</i>, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ErpNpR3XYUw?si=YZIDr1yZx7KkUxIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</article>
+</section>
+
+<aside id="lateral">
+
+<h1>Outras Notícias<br/></h1>
+<h2>Vídeo mais recente</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eo29M8Yk3Qc?si=ZEMZJp1R2m1mExTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2>Novidades no Glass<br/></h2>
+<p>O <Strong>Google</strong> enfim revelou as especificações completas do <i>Google Glass</i>, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+<p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+</aside>
+<footer id="rodape">
+<p>Copyright &copy; 2013 - by Gustavo Guanabara and Heitor Berg<br/>
+<a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</A> |<a href="http://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>

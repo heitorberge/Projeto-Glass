@@ -1,0 +1,44 @@
+@charset "UTF-8";
+a {
+	color: #606060 ;
+	text-decoration: none;
+	transition: background-color 1s;
+}
+ article a:hover {
+	text-decoration: underline;
+	background-color: #dfdfdf;
+	transition: 1s ;
+}
+aside a:hover {
+	text-decoration: underline;
+	background-color: #dfdfdf;
+	transition: 1s ;
+}
+footer a:hover {
+	text-decoration: underline;
+	background-color: #dfdfdf;
+	transition: 1s ;
+}
+video.filme {
+	position: right;
+}
+div#tv-radio {
+	width: 900px;
+	height: 580px;
+	margin: auto;
+	background: url("../_imagens/radio-tv.png" no-repeat);
+}
+audio#musica {
+	display: block;
+	position: relative;
+	left: 575px;
+	top: 500px;
+	width: 300px;
+}
+video#filme {
+	display: block;
+	position: relative;
+	left:90px ;
+	top: 80px;
+	width: 440px;
+}

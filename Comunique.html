@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<div id="interface">
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/form.css"/>
+    <style>
+        body {
+        background-color: #ffffff;
+        color: rgba("0,0,0,1");
+        font: Arial, sans-serif;
+    }
+        p {
+        text-indent: 25px;
+            font-family: Arial, sans-serif;
+            width : 550px;
+            text-align: justify;
+          }
+    a {
+        color: #606060 ;
+        text-decoration: none;
+        transition: background-color 1s;
+    }
+     article a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    aside a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    footer a:hover {
+        text-decoration: underline;
+        background-color: #dfdfdf;
+        transition: 1s ;
+    }
+    body h1 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    body h2 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    body h3 {
+            font-family: Arial, sans-serif;
+            color: #4f4f4f;
+    }
+    header#cabecalho img#icone {
+        position : absolute;
+        left: 780px;
+        top: 40px;
+    }
+    header#cabecalho {
+        border-bottom: 1px #606060 solid;
+        height: 150px;
+        background : url('C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/glass-logo.jpg')no-repeat 80px 100px;
+    }
+
+    header#cabecalho h2 {
+        font-family: Arial, sans-serif;
+        font-size: 15pt;
+        color: #888888;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    table#tabela {
+        border: 1px solid #606060;
+        border-spacing: 0px;
+        margin-left : auto;
+        margin-right: center;
+    }
+    table#tabela td {
+        font-family: Arial, sans-serif;
+        border: 1px solid #606060;
+        padding :10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table#tabela td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    }
+    table#tabela td.cd {
+     background-color: #cecece
+    }
+    table#tabela caption {
+        color: #888888;
+        font-size: 13pt;
+        font-weight: bolder;
+    }
+    table#tabela caption span {
+        display:block;
+        float:right;
+        color: #000000;
+        font-size: 8pt;
+        margin-top: 10px;
+    }
+    article#np h2 {
+        font-size: 13pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 0px;
+        margin : 10px 0px 10px 0px;
+    }
+
+    header#np h1 {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    color : #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+    header#np h2 {
+    font-size: 13pt;
+    background-color: #f5f5f5;
+    margin: 0px;
+    color: #cecece;
+    }
+    header#np h3 {
+    font-size: 12px;
+    color: #606060;
+    }
+    .direita {
+    text-align: right;
+    }
+    /*formataçao Foto Legenda*/
+    figure.foto-legenda {
+        position:relative;
+        border: 1px solid #b4b4b4;
+    }
+    figure.foto-legenda img {
+        width: 150px;
+        height: 200px;
+        box-shadow: 1px 1px 3px ('0,0,0,.4');
+    }
+    figure.foto-legenda figcaption {
+        position:absolute;
+        opacity:0;
+        top:0px;
+        background-color:('0,0,0,.4');
+        color:white;
+        width:100%;
+        height:100%;
+        padding:10px;
+        box-sizing:border-box;
+        transition:opacity 1s;
+    }
+    figure.foto-legenda hover figcaption {
+        opacity:1;
+    }
+    /*formataçao do menu*/
+
+    nav#menu {
+        display: block;
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        left:400px
+    }
+    nav#menu li{
+        display: inline-block;
+        background-color: #dddddd;
+        padding: 10px;
+        transition: background-color 1s;
+        box-shadow: 0px 0px 10px black;
+        font-family: Arial, sans-serif;
+    }
+    nav#menu li:hover {
+        background-color: #b3b3b3;
+    }
+    nav#menu h1 {
+        display: none;
+
+    }
+
+    section#corpo {
+        display: block;
+        width : 550px;
+        float: left;
+        border-right:1px solid #606060;
+        padding-right: 15px;
+    }
+    aside#lateral {
+        display: block;
+        width: 650px;
+        float: right;
+        padding :10px ;
+        background-color: #dddddd;
+        margin-top : 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    aside#lateral h1 {
+        font-family: Arial, sans-serif;
+        font-size: 20pt;
+        color: #606060;
+        padding: 5px ;
+        margin-top: 0px;
+    }
+    aside#lateral h2 {
+        font-family: Arial, sans-serif;
+        font-size: 15pt;
+        color: #ffffff;
+        padding: 5px;
+        background-color : #606060;
+        padding: 5px ;
+    }
+
+    footer#rodape {
+     clear: both;
+     border-top: 1px solid #606060;
+    }
+    footer#rodape p {
+        text-align: center;
+
+    </style>
+		<title>Google Glass</title>
+	<style>
+	</style>
+</div>
+</head>
+<hgroup>
+<body background="#dddddd;">
+<script>
+    function mudaFoto (Foto) {
+document.getELEMENTById ("icone").src = foto;
+}
+</script>
+	<header id="cabecalho">	
+	<h1> GOOGLE GLASS</h1>
+	<h2>A Revolução Do GOOGLE Está chegando</h2>
+<figure>
+	<img id="icone" src = "C:/Users/Berg/Documents/Heitor Berg/curso-html5-pacote01 (1)/projeto-glass-html5/_media/_imagens/contato.png"/>
+</figure>
+<br/>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('_media/_imagens/home.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_media/_imagens/espeficacoes.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_media/_imagens/Fotos.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_media/_imagens/multimidia.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_media/_imagens/Contato.png')" onmouseout="mudaFoto('_media/_imagens/glass.png')"><a href="Comunique.html">Fale conosco</a></li>
+                <li><a href="ajuda.html">Ajuda/Help</a></li>
+            </ul>
+        </nav>
+</header>
+<h2>Fale Conosco > Contato</h2>
+<h2>Formulário de Contato <h2>
+<h2>Por Gustavo Guanabara e Heitor Berg<h2>
+<h3 class="direita">Feito em 2024 e Notícias de 2013</h3>
+<h3>Compre um glass na parte de Ajuda</h3>
+<h3>obs:Leia a parte AJUDA</h3>
+<form method="post" id="fcontato" action="mailto:heitorberg114@gmail.com" oninput="calc_total();">
+<fieldset id="user"><legend>Identificação do Usuário</legend>
+   <p><Label for="cnome"> Nome</label>:<input type="text" name="tnome" id="cnome" size="20" maxlenght="20" placeholder="Seu Nome"/> </p>
+   <p><Label for="csenha"> Senha</label>:<input type="password" name="tsenha" id="csenha" size="10" maxlenght="10" placeholder="Sua senha"/></p>
+   <p><Label for="cEmail"> E-mail</label>: <input type="email" name="tEmail" id="cEmail" size"30" maxlenght="30"/></p>
+    <fieldset id="sexo"><legend>Sexo:</legend>
+        <input type="radio" name="Tsexo" id="cmasc"/> <label for "cmasc"> Masculino</label><br/>
+        <input type="radio" name="Tsexo" id="cfem"/> <label for "cfem">Feminino</label></fieldset><br/>
+   <p> Data de Nascimento: <input type="date" name="tnasc" id="cnasc" size="12" maxlenght="12"/> </p></fieldset>
+
+<fieldset id="Adress"><legend>Endereço do Usuário</legend>
+    <p><Label for="crua">Logradouro</label>: <input type="text" name="trua" id="crua" size="20" maxlenght="80" placeholder="Rua, Avenida, Trav..."/</p>
+    <p><label for="cnum">Número</label>:<input type="number" name="tnum" id="cnum" min="0" max="99999"/></p>
+  <p><Label for="cEst"> Estado:</label>
+  <select name="tEst" id="cEst">
+  <optgroup label="A">
+  <option value="Ac">Acre </option>
+  <option value="Al">Alagoas</option>
+  <option value="Ap">Amapá</option>
+  <option value="Am">Amazonas </option>
+  </optgroup>
+  <optgroup label="B">
+  <option value="Ba">Bahia </option>
+  </optgroup>
+  <optgroup label ="C">
+  <option value="Ce">Ceará </option>
+  </optgroup>
+  <optgroup label="D">
+  <option value="Df">Distrito Federal </option>
+  </optgroup>
+  <optgroup label="E">
+  <option value="ES">Espírito Santo </option>
+  </optgroup>
+  <optgroup label="G">
+  <option value="go">Goiás </option>
+  </optgroup>
+  <optgroup label="M">
+  <option value="ma">Maranhão </option>
+  <option value="Mt">Mato Grosso </option>
+  <option value="ms">Mato Grosso do Sul </option>
+  <option value="Mg">Minas Gerais </option>
+  </optgroup>
+  <optgroup label="P">
+  <option value="pa">Pará </option>
+  <option value="pb">Paraíba </option>
+  <option value="pr">Paraná </option>
+  <option value="pe">Pernambuco </option>
+  <option value="pi">Piauí </option>
+  </optgroup>
+  <optgroup label="R">
+  <option value="Rj">Rio de Janeiro </option>
+  <option value="Rn">Rio Grande do Norte </option>
+  <option value="Rs">Rio Grande do Sul </option>
+  <option value="Ro">Rondônia </option>
+  <option value="Rr">Roraima </option>
+  </optgroup>
+  <optgroup label="S">
+  <option value="Sc">Santa Catarina </option>
+  <option selected value="Sp">São Paulo </option>
+  <option value="SE">Sergipe </option>
+  </optgroup>
+  <optgroup label="T">
+  <option value="To">Tocantins </option>
+  </optgroup>
+  </select></p>
+    <p><Label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxlenght="40" placeholder="Seu munícipio" list="cidades"/></p>
+	<datalist id="cidades">
+		<option value="Rio de Janeiro"></option>
+		<option value="Rio Branco"></option>
+		<option value="Maceió"></option>
+		<option value="Macapá"></option>
+		<option value="Manaus"></option>
+		<option value="Salvador"></option>
+		<option value="Fortaleza"></option>
+		<option value="Brasília"></option>
+		<option value="Vitória"></option>
+		<option value="Goiânia"></option>
+		<option value="São Luís"></option>
+		<option value="Cuiabá"></option>
+		<option value="Campo Grande"></option>
+		<option value="Belo Horizonte"></option>
+		<option value="Belém"></option>
+		<option value="João Pessoa	"></option>
+		<option value="Curitiba"></option>
+		<option value="Recife"></option>
+		<option value="Teresina"></option>
+		<option value="Natal"></option>
+		<option value="Porto Alegre"></option>
+		<option value="Porto Velho"></option>
+		<option value="Boa Vista"></option>
+		<option value="Florianópolis"></option>
+		<option value="São Paulo"></option>
+		<option value="Aracaju"></option>
+		<option value="Palmas"></option>
+		
+	</datalist></fieldset>
+<input type="submit" type="Enviar" Size ="30"/> <br/>
+<a href="ajuda.html">Leia antes de Enviar o Formulário</a><br/>
+<fieldset id="Mensagem"><legend>Mensagem do Usuário</legend>
+     <p><Label for="cUrg">Grau de Urgência:</label>Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Max</p>
+    <p><Label for="cMsg"> Mensagem:</label><textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"/></p>
+	<input type="submit" type="Enviar" Size ="30"/>
+<a href="ajuda.html">Leia antes de Enviar</a><br/>
+	</fieldset>
+</form>
+
+
+<footer id="rodape">
+<p>Copyright &copy; 2013 - by Gustavo Guanabara and Heitor Berg<br/>
+<a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</A> |<a href="http://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>
